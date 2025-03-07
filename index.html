@@ -3,16 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BitWebsite</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Black in Tech at UCI</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Welcome to BitWebsite</h1>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <p>Start building your website here!</p>
-  </main>
-  <script src="js/script.js"></script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img
+        class="logo"
+        src="https://i.ibb.co/ksVSBy2k/BIT-Logo-removebg-preview.png"
+        alt="Black in Tech Logo"
+      />
+      <h1>Black in Tech at UCI</h1>
+      <p>Building a community where minorities in tech collaborate, innovate, and excel.</p>
+      <a href="#" class="btn">Get Involved</a>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <!-- FIRST CONTENT ITEM -->
+    <div class="content-item">
+      <img src="https://i.ibb.co/CXjCJvd/IMG-1731-Original.jpg" alt="Learn More">
+      <div class="content-text">
+        <h2>
+          Learn more about 
+          <span class="highlight">Software Development</span>, 
+          <span class="highlight">Tech Talks</span>, and much more.
+        </h2>
+        <p>
+          Hosted weekly during the academic quarter, join us for 
+          <span class="highlight">engaging workshops</span> 
+          to level up your skills, network with others, and grow as a 
+          <span class="highlight">tech innovator</span>.
+        </p>
+        <a href="#events" class="text-button">Found in our events &gt;</a>
+      </div>
+    </div>
+    
+    <!-- SECOND CONTENT ITEM -->
+    <div class="content-item reverse">
+      <img src="https://i.ibb.co/qL05jKF3/IMG-0231.jpg" alt="Professional Engineers">
+      <div class="content-text">
+        <h2>
+          Listen to our 
+          <span class="highlight">professional software engineers</span> 
+          working at top companies.
+        </h2>
+        <p>
+          Get exclusive insights into their work, gain 
+          <span class="highlight">mentorship</span>, and explore 
+          <span class="highlight">industry best practices</span> 
+          at our interactive speaker events.
+        </p>
+        <a href="#events" class="text-button">Found in our events &gt;</a>
+      </div>
+    </div>
+    
+    <!-- THIRD CONTENT ITEM -->
+    <div class="content-item">
+      <img src="https://i.ibb.co/9HkL7bmP/IMG-2383.jpg" alt="Get Involved">
+      <div class="content-text">
+        <h2>
+          Get involved with our <span class="highlight">Tech Talk</span> events, 
+          <span class="highlight">internship opportunities</span>, and conventions.
+        </h2>
+        <p>
+          Take advantage of 
+          <span class="highlight">exclusive opportunities</span> 
+          to grow your career and build meaningful connections within the tech industry.
+        </p>
+        <a href="#resources" class="text-button">See our resources &gt;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-content">
+      <div class="cta-design-icon">
+        <i class="fas fa-users" style="font-size: 64px; color: #4B227A;"></i>
+      </div>
+      <h1>Who doesn't love opportunity? <br> Let’s keep in touch.</h1>
+      <a href="/join" class="cta-button">Join Us &gt;</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-overlay"></div>
+    <div class="about-content">
+      <h2>Our Focus</h2>
+      <p>We're focused on building a supportive community that fosters growth, innovation, and connection for aspiring professionals.</p>
+      <a href="/about" class="about-button">Learn more about us &gt;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Black in Tech</h4>
+        <ul class="social-links">
+          <!-- Instagram & Discord remain; Facebook, LinkedIn, YouTube, TikTok removed -->
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/featured-resources">Featured Resources</a></li>
+          <li><a href="/project-teams">WebDev Teams</a></li>
+          <li><a href="/TechTalks">TechTalks</a></li>
+          <li><a href="/newsletter-archive">Newsletter Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Join</h4>
+        <ul>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Copyright 2025 Black in Tech</p>
+      <p>Developed by Alyas Thomas, Steven Gorlicki, and Jason Phan</p>
+    </div>
+  </footer>
 </body>
 </html>
