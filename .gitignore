@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+# Node modules
 node_modules
-=======
-.DS_Store
-node_modules
-/dist
 
+# System files
+.DS_Store
+/dist
 
 # local env files
 .env.local
@@ -24,4 +23,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
->>>>>>> Home-Page

@@ -1,0 +1,434 @@
+/* Resources Page - Complete Overhaul */
+
+/* Page Transitions and Animations */
+@keyframes pageReveal {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cardFlip {
+  0% {
+    transform: rotateY(0deg) translateY(0);
+  }
+  100% {
+    transform: rotateY(10deg) translateY(-8px);
+  }
+}
+
+.page-transition {
+  animation: pageReveal 0.8s ease forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 1s ease-out;
+}
+
+/* Main container */
+.resources-section {
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9fa;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  perspective: 1000px; /* For 3D effects */
+}
+
+/* Header section with gradient background */
+.resources-hero {
+  background: linear-gradient(135deg, #4B227A, #0197AF);
+  color: white;
+  padding: 100px 20px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.resources-hero::after {
+  /* Remove the slanted effect */
+  display: none;
+}
+
+/* Ensure the title is white with high specificity */
+.resources-section .resources-hero h1,
+.resources-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  color: white !important; /* Ensure title is white */
+}
+
+.resources-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Container for resource cards */
+.resources-container {
+  margin: 0 auto 80px;
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Category filter tabs */
+.resource-categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-tab {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.category-tab:hover, .category-tab.active {
+  background: linear-gradient(135deg, #4B227A, #0197AF);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Resource grid layout */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Resource card styling */
+.resource-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+.resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.resource-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #4B227A;
+  transition: transform 0.8s ease;
+}
+
+.resource-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.resource-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.resource-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.resource-tag {
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  color: #555;
+}
+
+/* Modern Button with Icon */
+.btn {
+  position: relative;
+  background: linear-gradient(135deg, #4B227A, #0197AF);
+  color: white;
+  padding: 12px 50px 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.btn::after {
+  content: "\f054"; /* Font Awesome chevron-right icon */
+  font-family: "Font Awesome 5 Free", FontAwesome, sans-serif;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.btn:hover::after {
+  transform: translate(3px, -50%);
+}
+
+/* Empty state */
+.empty-resources {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-resources h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.empty-resources p {
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resources-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .resources-hero {
+    padding: 70px 20px 60px;
+  }
+  
+  .resources-container {
+    margin-top: -30px;
+  }
+}
+
+/* Modern styling for resource cards if they exist */
+.resource-card, .card {
+  background: #fff !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 30px !important;
+}
+
+.resource-card:hover, .card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Modern headers for the resources page */
+.resources-header h1, .resources-section h1, .resources-container h1 {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #333 !important;
+  margin-bottom: 20px !important;
+  text-align: center !important;
+}
+
+/* Update any section titles */
+.section-title, h2 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: #444 !important;
+  margin-bottom: 30px !important;
+}
+
+/* For the resources header, force white color with max specificity */
+html body .resources-section .resources-hero h1 {
+  color: white !important;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+/* Enhanced Footer Styles */
+.resources-footer {
+  background-color: #081229;
+  color: #fff;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.resources-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resources-footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.resources-footer .footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.resources-footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.resources-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resources-footer ul li {
+  margin-bottom: 10px;
+}
+
+.resources-footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resources-footer ul li a:hover {
+  color: #fff;
+}
+
+.resources-footer .social-links li a {
+  display: flex;
+  align-items: center;
+}
+
+.resources-footer .social-links li a i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.resources-footer .footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resources-footer .footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #aaa;
+} 

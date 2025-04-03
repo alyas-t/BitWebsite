@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Placeholders</title>
+  <script>
+    // List of image names needed for the site
+    const imageNames = [
+      'about-bg.jpg',
+      'blackInTechGroup.jpg',
+      'diver.jpg',
+      'events.jpg',
+      'community.jpg',
+      'career.jpg',
+      '1st.jpg',
+      '2nd.jpg',
+      '3rd.jpg',
+      '4th.jpg',
+      '5th.jpg',
+      '6th.jpg'
+    ];
+
+    function downloadPlaceholders() {
+      imageNames.forEach(imageName => {
+        // Create placeholder URL from placeholder.com with appropriate text
+        const text = imageName.replace('.jpg', '');
+        const url = `https://via.placeholder.com/800x600/4B227A/FFFFFF?text=${text}`;
+        
+        // Create download link
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = imageName;
+        link.textContent = `Download ${imageName}`;
+        link.className = 'download-link';
+        
+        // Add image preview
+        const img = document.createElement('img');
+        img.src = url;
+        img.alt = imageName;
+        img.style.maxWidth = '300px';
+        img.style.marginBottom = '10px';
+        
+        // Create container
+        const container = document.createElement('div');
+        container.className = 'image-container';
+        container.appendChild(img);
+        container.appendChild(link);
+        
+        document.getElementById('placeholder-images').appendChild(container);
+      });
+    }
+
+    window.onload = downloadPlaceholders;
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .image-container {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .download-link {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #4B227A;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Placeholders for Black in Tech Website</h1>
+  <p>
+    To properly display the website, you need to download the following placeholder images
+    and save them to the <code>public/images</code> directory. Right-click each image and 
+    select "Save Image As" to download them.
+  </p>
+  <div id="placeholder-images"></div>
+</body>
+</html> 
