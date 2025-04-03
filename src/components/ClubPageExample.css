@@ -1,0 +1,426 @@
+/* ClubPageExample.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Page Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.page-transition {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 1s ease-out;
+}
+
+:root {
+  --accent-color: #4B227A;
+  --teal-color: #0197AF;
+  --highlight-color: #FFD700;
+  --diagonal-bg: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b9b9b9' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #4B227A, #0197AF) !important;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Info Section */
+.info-section {
+  padding: 60px 0;
+  background-color: #fff;
+  margin: 0;
+  border: none;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.info-text h2 {
+  font-size: 2.5rem;
+  color: #000 !important;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.info-text p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  color: #000 !important;
+}
+
+.info-image {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.info-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Mission Section */
+.mission-section {
+  background: linear-gradient(to right, #4B227A, #0197AF);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: white !important;
+}
+
+.mission-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #4B227A, #4B227A);
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.mission-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--highlight-color);
+}
+
+.mission-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.mission-card p {
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.3px;
+}
+
+/* Board Section */
+.board-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  background-image: none;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+
+.board-section h2 {
+  font-size: 2.5rem;
+  color: #000 !important;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.board-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #4B227A, #0197AF);
+}
+
+.board-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.board-member {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.member-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.board-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.board-member h3 {
+  font-size: 1.3rem;
+  color: var(--accent-color) !important;
+  margin: 15px 15px 5px;
+  letter-spacing: 0.5px;
+}
+
+.board-member .position {
+  color: var(--teal-color);
+  font-weight: 600;
+  margin: 0 15px 10px;
+  letter-spacing: 0.3px;
+}
+
+.board-member .bio {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 15px 20px;
+  flex-grow: 1;
+  letter-spacing: 0.3px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #081229;
+  color: #fff;
+  padding: 60px 20px 20px;
+  margin: 0;
+  border: none;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-links li a i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .info-content {
+    flex-direction: column;
+  }
+  
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .board-members {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* Enforce purple color for board member names with higher specificity using explicit hex */
+.board-section .board-member h3 {
+  color: #4B227A !important;
+}
+
+/* Additional override for board member names with increased specificity */
+body .about-page .board-section .board-member h3 {
+  color: #4B227A !important;
+}
+
+/* Adjust specific board member images to move up the heads a bit lower */
+.board-members > .board-member:nth-child(1) .member-image img,
+.board-members > .board-member:nth-child(2) .member-image img,
+.board-members > .board-member:nth-child(7) .member-image img,
+.board-members > .board-member:nth-child(10) .member-image img,
+.board-members > .board-member:nth-child(11) .member-image img {
+  object-position: center 30% !important;
+} 
