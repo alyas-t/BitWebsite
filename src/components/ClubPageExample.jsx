@@ -41,18 +41,6 @@ const ClubPageExample = () => {
       bio: "Senior Computer Science major with strong networking skills and a passion for connecting underrepresented students with industry opportunities."
     },
     {
-      name: "Ngozi Charles",
-      position: "Treasurer",
-      image: "https://i.ibb.co/r2d1VL3Z/IMG-1466.jpg",
-      bio: "Sophomore Computer Science Major with a knack for financial management and ensuring resources are allocated to best serve our community."
-    },
-    {
-      name: "Christine Oladipo",
-      position: "Secretary",
-      image: "https://i.ibb.co/fKMyxLS/IMG-1365.jpg",
-      bio: "Sophomore Computer Science Major with exceptional organizational skills and a dedication to maintaining clear communication within the organization."
-    },
-    {
       name: "Daniel Gonzales",
       position: "Marketing",
       image: "https://i.ibb.co/6JHtq0Lc/IMG-1333.jpg",
