@@ -7,56 +7,80 @@ const ClubPageExample = () => {
     {
       name: "Chidera Okoroama",
       position: "President",
-      image: "https://i.ibb.co/Fbd4SPkd/IMG-1629.jpg",
+      image: '/images/BoardSolo/ChideraSolo.jpg',
       bio: "Junior Business Information Management major with a passion for promoting diversity in tech and creating inclusive communities."
     },
     {
       name: "Juan Muhirwe",
       position: "Vice President",
-      image: "https://i.ibb.co/pjSRKqZm/IMG-1655.jpg",
+      image: '/images/BoardSolo/JuanSolo.jpeg',
       bio: "Sophomore Data Science Major focused on implementing machine learning solutions and bridging the diversity gap in AI development."
     },
     {
       name: "Alyas Thomas",
       position: "Webmaster",
-      image: "https://i.ibb.co/kg2wYWJM/IMG-1355.jpg",
+      image: '/images/BoardSolo/AlyasSolo.jpg',
       bio: "Sophomore Software Engineering major with expertise in full-stack development and a dedication to creating beautiful, user-friendly interfaces."
     },
     {
       name: "Jason Phan",
       position: "Web Developer",
-      image: "https://i.ibb.co/tpZvDykr/IMG-1347.jpg",
+      image: '/images/BoardSolo/JasonSolo.jpg',
       bio: "Junior Computer Science major passionate about web technologies and developing inclusive digital spaces that represent diverse backgrounds."
     },
     {
       name: "Steven Gorlicki",
       position: "Web Developer",
-      image: "https://i.ibb.co/YFQf3S6x/IMG-1338.jpg",
+      image: '/images/BoardSolo/StevenSolo.jpg',
       bio: "Junior Software Engineer with a focus on front-end development and creating engaging user experiences that celebrate diversity."
     },
     {
       name: "Ijeoma Arisa",
       position: "Corporate Outreach",
-      image: "https://i.ibb.co/LhZR70NB/IMG-1539.jpg",
+      image: '/images/BoardSolo/IjeomaSolo.jpg',
       bio: "Senior Computer Science major with strong networking skills and a passion for connecting underrepresented students with industry opportunities."
     },
     {
       name: "Daniel Gonzales",
       position: "Marketing",
-      image: "https://i.ibb.co/6JHtq0Lc/IMG-1333.jpg",
+      image: '/images/BoardSolo/DanielSolo.jpg',
       bio: "Senior Fine Arts major leveraging creative skills to develop impactful visual campaigns that highlight the achievements of minorities in tech."
     },
     {
       name: "Kaneto Ejizu",
       position: "Co-Event Chair",
-      image: "https://i.ibb.co/pmMhRQL/IMG-1589.jpg",
+      image: '/images/BoardSolo/KanetoSolo.jpg',
       bio: "Junior Software Engineer with a flair for event planning and creating engaging workshops that build technical skills and community connections."
     },
     {
       name: "Chibueze Ndukwe",
       position: "Co-Event Chair",
-      image: "https://i.ibb.co/691Rm1S/IMG-1554.jpg",
+      image: '/images/BoardSolo/ChibuezeSolo.jpg',
       bio: "Junior Electrical Engineer bringing technical expertise and creative programming ideas to our events to foster learning and networking opportunities."
+    },
+    {
+      name: "Layla Harvey",
+      position: "Events & Programming Intern",
+      image: "images/BoardSolo/LaylaSolo.jpeg",
+      bio: "Freshman Biomedical Engineer contributing fresh ideas and technical insight to our events, creating spaces for learning, connection, and growth in the tech community."
+    },
+    {
+      name: "Derrick Thrower",
+      position: "Technical Operations Intern",
+      image: "images/BoardSolo/DerrickSolo.JPG",
+      bio: "Freshman Computer Science who loves to work on new and interesting projects and is passionate about creating a welcoming space for the tech community."
+    },
+    {
+      name: "Ival Momoh",
+      position: "Technical Operations Intern",
+      image: "images/BoardSolo/IvalSolo.jpeg",
+      bio: "Freshman Computer Engineering major with a passion for building innovative, inclusive tech solutions and bridging the gap between software and hardware through intuitive web experiences."
+    },
+    {
+      name: "Angela Wang",
+      position: "Design and Marketing Intern",
+      image: "images/BoardSolo/AngelaSolo.JPG",
+      bio: "Sophomore Informatics major creating intentional designs that promote opportunities for and celebrate the successes of marginalized communities in technology."
     }
   ];
 
