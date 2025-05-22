@@ -38,7 +38,7 @@ const ResourcesPage = () => {
       id: 3,
       title: 'Networking for Tech Professionals',
       description: 'Networking opportunities including our Google campus tour and tech industry mixers designed specifically for underrepresented professionals.',
-      image: 'https://i.ibb.co/5hQXdSgB/IMG-8434.jpg',
+      image: 'src/components/images/rss1.jpg',
       category: 'networking',
       tags: ['Google Tour', 'Industry Events', 'Professional'],
       link: 'https://www.linkedin.com/learning/networking-for-career-success'
@@ -56,7 +56,7 @@ const ResourcesPage = () => {
       id: 5,
       title: 'Black in Tech Resume Workshops',
       description: 'Attend our resume workshops featuring Microsoft recruiters who provide personalized advice to help you stand out in the tech industry.',
-      image: 'https://i.ibb.co/RTCbcP1Y/IMG-2517.jpg',
+      image: 'src/components/images/rss2.jpg',
       category: 'career',
       tags: ['Microsoft', 'Resume', 'Job Search'],
       link: 'https://www.indeed.com/career-advice/resumes-cover-letters/how-to-make-a-resume-with-examples'
@@ -65,7 +65,7 @@ const ResourcesPage = () => {
       id: 6,
       title: 'Tech Industry Mentorship',
       description: 'Connect with experienced mentors in the tech industry who can provide guidance and support for your career journey.',
-      image: 'https://i.ibb.co/7tCHJ22S/IMG-0231.jpg',
+      image: 'src/components/images/rss3.jpg',
       category: 'career',
       tags: ['Mentorship', 'Career Growth', 'Development'],
       link: 'https://www.blacksintechnology.net/'

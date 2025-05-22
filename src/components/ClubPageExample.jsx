@@ -7,43 +7,43 @@ const ClubPageExample = () => {
     {
       name: "Chidera Okoroama",
       position: "President",
-      image: "https://i.ibb.co/Fbd4SPkd/IMG-1629.jpg",
+      image: "src/components/images/board1.jpg",
       bio: "Junior Business Information Management major with a passion for promoting diversity in tech and creating inclusive communities."
     },
     {
       name: "Juan Muhirwe",
       position: "Vice President",
-      image: "https://i.ibb.co/pjSRKqZm/IMG-1655.jpg",
+      image: "src/components/images/board2.jpg",
       bio: "Sophomore Data Science Major focused on implementing machine learning solutions and bridging the diversity gap in AI development."
     },
     {
       name: "Alyas Thomas",
       position: "Webmaster",
-      image: "https://i.ibb.co/kg2wYWJM/IMG-1355.jpg",
+      image: "src/components/images/board3.jpg",
       bio: "Sophomore Software Engineering major with expertise in full-stack development and a dedication to creating beautiful, user-friendly interfaces."
     },
     {
       name: "Jason Phan",
       position: "Web Developer",
-      image: "https://i.ibb.co/tpZvDykr/IMG-1347.jpg",
+      image: "src/components/images/board4.jpg",
       bio: "Junior Computer Science major passionate about web technologies and developing inclusive digital spaces that represent diverse backgrounds."
     },
     {
       name: "Steven Gorlicki",
       position: "Web Developer",
-      image: "https://i.ibb.co/YFQf3S6x/IMG-1338.jpg",
+      image: "src/components/images/board5.jpg",
       bio: "Junior Software Engineer with a focus on front-end development and creating engaging user experiences that celebrate diversity."
     },
     {
       name: "Ijeoma Arisa",
       position: "Corporate Outreach",
-      image: "https://i.ibb.co/LhZR70NB/IMG-1539.jpg",
+      image: "src/components/images/board6.jpg",
       bio: "Senior Computer Science major with strong networking skills and a passion for connecting underrepresented students with industry opportunities."
     },
     {
       name: "Ngozi Charles",
       position: "Treasurer",
-      image: "https://i.ibb.co/r2d1VL3Z/IMG-1466.jpg",
+      image: "src/components/images/board8.jpg",
       bio: "Sophomore Computer Science Major with a knack for financial management and ensuring resources are allocated to best serve our community."
     },
     {
@@ -61,13 +61,13 @@ const ClubPageExample = () => {
     {
       name: "Kaneto Ejizu",
       position: "Co-Event Chair",
-      image: "https://i.ibb.co/pmMhRQL/IMG-1589.jpg",
+      image: "src/components/images/boardsecondlast.jpg",
       bio: "Junior Software Engineer with a flair for event planning and creating engaging workshops that build technical skills and community connections."
     },
     {
       name: "Chibueze Ndukwe",
       position: "Co-Event Chair",
-      image: "https://i.ibb.co/691Rm1S/IMG-1554.jpg",
+      image: "src/components/images/boardlast.jpg",
       bio: "Junior Electrical Engineer bringing technical expertise and creative programming ideas to our events to foster learning and networking opportunities."
     }
   ];
