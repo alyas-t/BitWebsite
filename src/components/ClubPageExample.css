@@ -265,6 +265,36 @@
   background: linear-gradient(to right, #4B227A, #0197AF);
 }
 
+/* Year In Review Section */
+.YearInReview-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  background-image: none;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+
+.YearInReview-section h2 {
+  font-size: 2.8rem;
+  color: #000 !important;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.YearInReview-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #4B227A, #0197AF);
+}
+
 .board-members {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -423,4 +453,92 @@ body .about-page .board-section .board-member h3 {
 .board-members > .board-member:nth-child(10) .member-image img,
 .board-members > .board-member:nth-child(11) .member-image img {
   object-position: center 30% !important;
+}
+
+/* CTA Button Styles */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #4B227A, #0197AF);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(75, 34, 122, 0.3);
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #4B227A, #0197AF);
+  color: white;
+  text-decoration: none;
+}
+
+.cta-button.secondary {
+  background: linear-gradient(135deg, #0197AF, #4B227A);
+}
+
+/* Event Highlights Section */
+.event-highlights-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+
+.event-highlights-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-highlights-text {
+  margin-bottom: 40px;
+}
+
+.event-highlights-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+.event-highlights-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.event-image {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-image:hover {
+  transform: translateY(-5px);
+}
+
+.event-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .event-highlights-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 } 
