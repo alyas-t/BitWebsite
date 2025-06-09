@@ -7,7 +7,9 @@ const ClubPageExample = () => {
     {
       name: "Chidera Okoroama",
       position: "President",
+
       image: '/images/BoardSolo/ChideraSolo.jpg',
+
       bio: "Junior Business Information Management major with a passion for promoting diversity in tech and creating inclusive communities."
     },
     {
@@ -19,6 +21,7 @@ const ClubPageExample = () => {
     {
       name: "Alyas Thomas",
       position: "Webmaster",
+
       image: '/images/BoardSolo/AlyasSolo.jpg',
       bio: "Sophomore Software Engineering major with expertise in full-stack development and a dedication to creating beautiful, user-friendly interfaces."
     },
@@ -32,11 +35,13 @@ const ClubPageExample = () => {
       name: "Steven Gorlicki",
       position: "Web Developer",
       image: '/images/BoardSolo/StevenSolo.jpg',
+
       bio: "Junior Software Engineer with a focus on front-end development and creating engaging user experiences that celebrate diversity."
     },
     {
       name: "Ijeoma Arisa",
       position: "Corporate Outreach",
+
       image: '/images/BoardSolo/IjeomaSolo.jpg',
       bio: "Senior Computer Science major with strong networking skills and a passion for connecting underrepresented students with industry opportunities."
     },
@@ -55,6 +60,7 @@ const ClubPageExample = () => {
     {
       name: "Chibueze Ndukwe",
       position: "Co-Event Chair",
+
       image: '/images/BoardSolo/ChibuezeSolo.jpg',
       bio: "Junior Electrical Engineer bringing technical expertise and creative programming ideas to our events to foster learning and networking opportunities."
     },

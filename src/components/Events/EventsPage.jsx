@@ -12,7 +12,7 @@ const EventsPage = () => {
       date: "January 13, 2025",
       location: "DBH 1420",
       description: "Get to know the board, enjoy pizza, and participate in brain teaser games. Don't forget to RSVP via our linktree!",
-      image: "https://i.ibb.co/S70zvswY/Week-2-Meeting-Post.jpg",
+      image: "src/components/images/event1.jpg",
       url: "/events/introducing-bit"
     },
     {
@@ -21,7 +21,7 @@ const EventsPage = () => {
       date: "January 15, 2025",
       location: "DBH 6011",
       description: "Join us at the ICS Club Fair to learn about Black in Tech at UCI and how to get involved.",
-      image: "https://i.ibb.co/JWjL91Ds/Week-2-ICS-Fair-Post.jpg",
+      image: "src/components/images/event2.jpg",
       url: "/events/ics-club-fair"
     },
     {
@@ -30,7 +30,7 @@ const EventsPage = () => {
       date: "January 27, 2025",
       location: "DBH 1420",
       description: "Hear from Charles Sine (Inclusive Health Founder) and Gregg Klang (FemTech Founder) about their experiences in the startup ecosystem.",
-      image: "https://i.ibb.co/7xX6Hn7d/Week-4-Tech-Talk-Post.jpg",
+      image: "src/components/images/event3.jpg",
       url: "/events/tech-startups-panel"
     },
     {
@@ -39,7 +39,7 @@ const EventsPage = () => {
       date: "February 3, 2025",
       location: "DBH 1420",
       description: "Gain insights on how to tackle industry technical & behavioral interview questions with Walter Myers III and Nick Bell from Microsoft.",
-      image: "https://i.ibb.co/mVsT8V93/Week-5-Mock-Interview.jpg",
+      image: "src/components/images/event4.jpg",
       url: "/events/mock-interviews"
     },
     {
@@ -48,7 +48,7 @@ const EventsPage = () => {
       date: "February 10, 2025",
       location: "Student Center, Emerald Bay A",
       description: "Connect with UCI alumni including Anthony Mays (Founder/Career Coach), Pierce Taylor (Software Engineer at Google), and Briana Jallow (Technology Consultant).",
-      image: "https://i.ibb.co/vCY57q4X/Week-6-Tech-Talk-Post.jpg",
+      image: "src/components/images/event5.jpg",
       url: "/events/alumni-panel"
     },
     {
@@ -57,7 +57,7 @@ const EventsPage = () => {
       date: "February 21, 2025",
       location: "Los Angeles",
       description: "Join us for an exclusive tour of Google's Los Angeles office. Transportation will be provided for this half-day experience.",
-      image: "https://i.ibb.co/2Yvbd5jr/Google-Tour-Post.jpg",
+      image: "src/components/images/event6.jpg",
       url: "/events/google-tour"
     },
     {
@@ -66,7 +66,7 @@ const EventsPage = () => {
       date: "February 24, 2025",
       location: "DBH 1420",
       description: "Learn how to optimize your resume and get peer-to-peer review with Walter Myers III and Kamika Dillard from Microsoft.",
-      image: "https://i.ibb.co/LzzWjWmm/Week-8-Resume-Workshop.jpg",
+      image: "src/components/images/event7.jpg",
       url: "/events/resume-workshop"
     }
   ];
