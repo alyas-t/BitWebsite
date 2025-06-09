@@ -7,68 +7,86 @@ const ClubPageExample = () => {
     {
       name: "Chidera Okoroama",
       position: "President",
-      image: "src/components/images/board1.jpg",
+
+      image: '/images/BoardSolo/ChideraSolo.jpg',
+
       bio: "Junior Business Information Management major with a passion for promoting diversity in tech and creating inclusive communities."
     },
     {
       name: "Juan Muhirwe",
       position: "Vice President",
-      image: "src/components/images/board2.jpg",
+      image: '/images/BoardSolo/JuanSolo.jpeg',
       bio: "Sophomore Data Science Major focused on implementing machine learning solutions and bridging the diversity gap in AI development."
     },
     {
       name: "Alyas Thomas",
       position: "Webmaster",
-      image: "src/components/images/board3.jpg",
+
+      image: '/images/BoardSolo/AlyasSolo.jpg',
       bio: "Sophomore Software Engineering major with expertise in full-stack development and a dedication to creating beautiful, user-friendly interfaces."
     },
     {
       name: "Jason Phan",
       position: "Web Developer",
-      image: "src/components/images/board4.jpg",
+      image: '/images/BoardSolo/JasonSolo.jpg',
       bio: "Junior Computer Science major passionate about web technologies and developing inclusive digital spaces that represent diverse backgrounds."
     },
     {
       name: "Steven Gorlicki",
       position: "Web Developer",
-      image: "src/components/images/board5.jpg",
+      image: '/images/BoardSolo/StevenSolo.jpg',
+
       bio: "Junior Software Engineer with a focus on front-end development and creating engaging user experiences that celebrate diversity."
     },
     {
       name: "Ijeoma Arisa",
       position: "Corporate Outreach",
-      image: "src/components/images/board6.jpg",
+
+      image: '/images/BoardSolo/IjeomaSolo.jpg',
       bio: "Senior Computer Science major with strong networking skills and a passion for connecting underrepresented students with industry opportunities."
-    },
-    {
-      name: "Ngozi Charles",
-      position: "Treasurer",
-      image: "src/components/images/board8.jpg",
-      bio: "Sophomore Computer Science Major with a knack for financial management and ensuring resources are allocated to best serve our community."
-    },
-    {
-      name: "Christine Oladipo",
-      position: "Secretary",
-      image: "https://i.ibb.co/fKMyxLS/IMG-1365.jpg",
-      bio: "Sophomore Computer Science Major with exceptional organizational skills and a dedication to maintaining clear communication within the organization."
     },
     {
       name: "Daniel Gonzales",
       position: "Marketing",
-      image: "https://i.ibb.co/6JHtq0Lc/IMG-1333.jpg",
+      image: '/images/BoardSolo/DanielSolo.jpg',
       bio: "Senior Fine Arts major leveraging creative skills to develop impactful visual campaigns that highlight the achievements of minorities in tech."
     },
     {
       name: "Kaneto Ejizu",
       position: "Co-Event Chair",
-      image: "src/components/images/boardsecondlast.jpg",
+      image: '/images/BoardSolo/KanetoSolo.jpg',
       bio: "Junior Software Engineer with a flair for event planning and creating engaging workshops that build technical skills and community connections."
     },
     {
       name: "Chibueze Ndukwe",
       position: "Co-Event Chair",
-      image: "src/components/images/boardlast.jpg",
+
+      image: '/images/BoardSolo/ChibuezeSolo.jpg',
       bio: "Junior Electrical Engineer bringing technical expertise and creative programming ideas to our events to foster learning and networking opportunities."
+    },
+    {
+      name: "Layla Harvey",
+      position: "Events & Programming Intern",
+      image: "images/BoardSolo/LaylaSolo.jpeg",
+      bio: "Freshman Biomedical Engineer contributing fresh ideas and technical insight to our events, creating spaces for learning, connection, and growth in the tech community."
+    },
+    {
+      name: "Derrick Thrower",
+      position: "Technical Operations Intern",
+      image: "images/BoardSolo/DerrickSolo.JPG",
+      bio: "Freshman Computer Science who loves to work on new and interesting projects and is passionate about creating a welcoming space for the tech community."
+    },
+    {
+      name: "Ival Momoh",
+      position: "Technical Operations Intern",
+      image: "images/BoardSolo/IvalSolo.jpeg",
+      bio: "Freshman Computer Engineering major with a passion for building innovative, inclusive tech solutions and bridging the gap between software and hardware through intuitive web experiences."
+    },
+    {
+      name: "Angela Wang",
+      position: "Design and Marketing Intern",
+      image: "images/BoardSolo/AngelaSolo.JPG",
+      bio: "Sophomore Informatics major creating intentional designs that promote opportunities for and celebrate the successes of marginalized communities in technology."
     }
   ];
 
@@ -142,6 +160,148 @@ const ClubPageExample = () => {
           </div>
         </div>
       </section>
+
+      {/* Accomplishments Section */}
+      <section className="YearInReview-section">
+        <div className="container">
+          <h2 className="fade-in-up section-title">Year In Review</h2>
+          <div className="accomplishments-content">
+            <div className="accomplishments-text fade-in-left">
+              <p>
+                This year, Black in Tech achieved significant growth across all platforms, gaining 350 Instagram followers, 47 Discord members, and 30 LinkedIn connections. Our core membership expanded to 10-15 active participants who engaged in exclusive opportunities including tours of Google LA, Google Irvine, and Microsoft Innovation Hub.
+              </p>
+              <p>
+                We successfully brought industry leaders from Google, Microsoft, PwC, and Northrop Grumman to speak with our members while actively pursuing sponsorship partnerships with major tech companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsorship Section */}
+      <section className="sponsorship-section">
+        <div className="container">
+          <div className="info-content">
+            <div className="info-text fade-in-left">
+              <h2>Sponsorship Opportunities</h2>
+              <p>
+              Companies interested in partnering with Black in Tech can access our comprehensive Sponsorship Packet and connect with us directly at blackintech@uci.edu.
+              </p>
+              <div className="cta-buttons ">
+                <a href="https://www.canva.com/design/DAGl29NyCvg/ZnVM_Ybdbt27NizKdSl1VQ/edit" target="_blank" rel="noopener noreferrer" className="cta-button">Sponsorship Packet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mentorship Section */}
+      <section className="mentorship-section">
+        <div className="container">
+          <h2 className="fade-in-up">Mentorship Program</h2>
+          <div className="mentorship-content">
+            <div className="mentorship-text fade-in-right">
+              <p>
+                Our structured mentorship program pairs students with industry professionals to provide career guidance and skill development. The program details and application timeline are outlined in our promotional materials, with specific dates and requirements clearly defined for interested participants.
+              </p>
+              <p>
+                Throughout the year, we hosted workshops and networking sessions that drew strong attendance and created meaningful connections. Our programming directly contributed to member success, including internship placements, job offers, and skill development that enhanced academic and professional trajectories.
+              </p>
+              <div className="cta-buttons ">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfl-axJgpCz0GZ58piuUvqUaoyF_BYNiouwpRPfE3XTDrrhbw/viewform" target="_blank" rel="noopener noreferrer" className="cta-button">Mentorship Program Form</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Highlights Section */}
+      <section className="event-highlights-section">
+        <div className="container">
+          <h2 className="fade-in-up">Event Highlights</h2>
+          <div className="event-highlights-content">
+            <div className="event-highlights-text fade-in-up">
+              <p>
+                Throughout the year, we hosted workshops and networking sessions that drew strong attendance and created meaningful connections. Our programming directly contributed to member success, including internship placements, job offers, and skill development that enhanced academic and professional trajectories.
+              </p>
+            </div>
+            <div className="event-highlights-images">
+              <div className="event-image scale-in">
+                <img 
+                  src="/images/BlogPost/python workshop.jpg" 
+                  alt="Python Workshop Event" 
+                  onError={(e) => PlaceholderImage.handleImageError(e, 'Python Workshop Event')}
+                />
+              </div>
+              <div className="event-image scale-in">
+                <img 
+                  src="/images/BlogPost/WIL_Colab.jpg" 
+                  alt="WIL Collaboration Event" 
+                  onError={(e) => PlaceholderImage.handleImageError(e, 'WIL Collaboration Event')}
+                />
+              </div>
+              <div className="event-image scale-in">
+                <img 
+                  src="/images/BlogPost/MIrcrosoft tour.gif" 
+                  alt="Microsoft Tour Event" 
+                  onError={(e) => PlaceholderImage.handleImageError(e, 'Microsoft Tour Event')}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Vision Section */}
+      <section className="vision-section">
+        <div className="container">
+          <h2 className="fade-in-up">Community & Future Vision</h2>
+          <div className="vision-cards">
+            <div className="vision-card scale-in">
+              <div className="icon">
+                <i className="fas fa-handshake"></i>
+              </div>
+              <h3>Strategic Partnerships</h3>
+              <p>Strengthening campus diversity initiatives through collaborations with other organizations.</p>
+            </div>
+            <div className="vision-card scale-in">
+              <div className="icon">
+                <i className="fas fa-chart-line"></i>
+              </div>
+              <h3>Measurable Impact</h3>
+              <p>Creating measurable impact on student outcomes and academic success.</p>
+            </div>
+            <div className="vision-card scale-in">
+              <div className="icon">
+                <i className="fas fa-rocket"></i>
+              </div>
+              <h3>Future Growth</h3>
+              <p>Developing new partnerships and expanding programming to serve more students.</p>
+            </div>
+            <div className="vision-card scale-in">
+              <div className="icon">
+                <i className="fas fa-heart"></i>
+              </div>
+              <h3>Community Building</h3>
+              <p>Maintaining our commitment to excellence and inclusive community building.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Get Involved Section */}
+      <section className="get-involved-section">
+        <div className="container">
+          <h2 className="fade-in-up">Get Involved</h2>
+          <div className="get-involved-content">
+            <div className="get-involved-text fade-in-up">
+              <p>
+                Students can join Black in Tech through our social media channels, sign up for our mentorship program, and participate in upcoming summer events. We encourage applications for leadership positions and thank all sponsors, speakers, faculty advisors, and graduating seniors who made this year's success possible.
+              </p>
+            </div>
+          </div>
+        </div>
+        </section>
 
       {/* Board Members Section */}
       <section className="board-section">
