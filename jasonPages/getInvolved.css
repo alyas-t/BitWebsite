@@ -1,0 +1,187 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+
+}
+
+header {
+display: flex;
+justify-content: center; 
+align-items: center; 
+background-color: #fff;
+padding: 10px 20px; 
+}
+
+header a {
+text-decoration: none; 
+color: #797979; 
+margin: 0 15px; 
+}
+
+header a:hover {
+color:black;
+}
+
+nav {
+display: flex;
+justify-content: center;
+gap: 15px; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:100%;
+    min-height: calc(100vh - 100px);
+  }
+
+.title{
+    font-size: 50px;
+    color:#02153D;
+    font-weight: bold;
+}
+
+.titleH2{
+    color:#0197AF;
+}
+
+
+.membershipInfo{
+    display:flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #02153D;
+    color:white;
+    background-image: url('./blackInTechGroup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+
+}
+
+.membershipInfo::before {
+    content: '';  
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #02153D;  
+    opacity: 0.94;  
+    z-index: 1; 
+}
+
+.membershipText{
+
+    width:700px;
+    height:auto;
+    border: #e4e9f7;
+    padding: 10px;
+    z-index: 2; 
+    position: relative;
+    color: white;
+}
+
+.leadershipOpportunities{
+    height:auto;
+    padding:40px;
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap:100px;
+    
+}
+
+.imageHolder{
+    text-align: center;
+    height:auto;
+    width:100%;
+    max-width: 500px;
+    overflow: hidden;
+    margin:20px;
+}
+
+img{
+    width: 100%;
+    height:auto;
+    display:block;
+}
+
+.textHolder{
+    align-items: center;
+    justify-content: center;
+    width:550px;
+}
+
+.basicButton{
+    background-color: #8BDCE9;
+    font-size:16px;
+    height:50px;
+    width:100px;
+    border-radius: 15px;
+    border:none;
+    cursor:pointer;
+    color:white;
+}
+
+.basicButton:hover{
+}
+
+
+.committeePositions{
+    height:400px;
+    text-align: center;
+}
+
+.mentorshipPrograms{
+    padding:10px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #02153D;
+    color:white;
+    background-image: url('./diver.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+
+.mentorshipPrograms::before {
+    content: ''; 
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #02153D;
+    opacity: 0.91;  
+    z-index: 1; 
+}
+
+.mentorshipText{
+    width:600px;
+    z-index: 2; 
+    position: relative;
+    color: white;
+}
+
+.list1{
+    color: #819ddb;
+}
+
+.list2{
+    color:#9477b4;
+}
+
+.list3{
+    color: #70b3bd;
+}
