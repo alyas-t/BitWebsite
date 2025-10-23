@@ -245,6 +245,11 @@
   border: none;
 }
 
+.board-actions {
+  margin-top: 40px;
+  text-align: center;
+}
+
 .board-section h2 {
   font-size: 2.5rem;
   color: #000 !important;
@@ -344,8 +349,16 @@
 .board-member .position {
   color: var(--teal-color);
   font-weight: 600;
-  margin: 0 15px 10px;
+  margin: 0 15px 5px;
   letter-spacing: 0.3px;
+}
+
+.board-member .year-major {
+  color: #888;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0 15px 10px;
+  letter-spacing: 0.2px;
 }
 
 .board-member .bio {
@@ -446,13 +459,22 @@ body .about-page .board-section .board-member h3 {
   color: #4B227A !important;
 }
 
-/* Adjust specific board member images to move up the heads a bit lower */
+/* Adjust specific board member images positioning */
+/* Show more of Chidera and Chibueze's photos (1st and 2nd board members) */
 .board-members > .board-member:nth-child(1) .member-image img,
-.board-members > .board-member:nth-child(2) .member-image img,
-.board-members > .board-member:nth-child(7) .member-image img,
-.board-members > .board-member:nth-child(10) .member-image img,
-.board-members > .board-member:nth-child(11) .member-image img {
-  object-position: center 30% !important;
+.board-members > .board-member:nth-child(2) .member-image img {
+  object-position: 50% 40% !important;
+}
+
+/* Show more of Brina's photo (7th board member) */
+.board-members > .board-member:nth-child(7) .member-image img {
+  object-position: 50% 30% !important;
+}
+
+/* Show more of Mahanth and Ival's photos (9th and 14th board members) */
+.board-members > .board-member:nth-child(9) .member-image img,
+.board-members > .board-member:nth-child(14) .member-image img {
+  object-position: 50% 30% !important;
 }
 
 /* CTA Button Styles */

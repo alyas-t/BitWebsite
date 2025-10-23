@@ -1,0 +1,542 @@
+/* Partners Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --accent-color: #4B227A;
+  --teal-color: #0197AF;
+  --highlight-color: #FFD700;
+  --diagonal-bg: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b9b9b9' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Page Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.page-transition {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 1s ease-out;
+}
+
+.partners-page {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--accent-color), var(--teal-color));
+  color: white;
+  line-height: 1.6;
+}
+
+.partners-page .hero-section {
+  padding: 80px 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--accent-color), var(--teal-color));
+  margin: 0;
+  border: none;
+}
+
+.partners-page .hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  color: white !important;
+}
+
+.partners-page .hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.partners-section {
+  padding: 60px 0;
+  background: #fff;
+  margin: 0;
+  border: none;
+}
+
+.sponsors-section {
+  padding: 60px 0;
+  background: #fff;
+  margin: 0;
+  border: none;
+}
+
+.partners-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #333 !important;
+  width: 100%;
+}
+
+.sponsors-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #333 !important;
+  width: 100%;
+}
+
+.partners-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.sponsors-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.partners-section .section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #333;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors-section .section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #333;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.partners-section .partner-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.partners-section .partner-card:hover {
+  transform: translateY(-8px);
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-color: var(--accent-color);
+}
+
+.sponsors-section .partner-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.sponsors-section .partner-card:hover {
+  transform: translateY(-8px);
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-color: var(--accent-color);
+}
+
+.partner-logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover .partner-logo {
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 25px rgba(75, 34, 122, 0.15);
+}
+
+.partner-logo img {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.logo-placeholder {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}
+
+.partners-section .partner-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.partners-section .partner-type {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partners-section .partner-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.sponsors-section .partner-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.sponsors-section .partner-type {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sponsors-section .partner-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.partners-section .partner-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-color);
+  border-radius: 25px;
+  border: 1px solid var(--accent-color);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.partners-section .partner-link:hover {
+  background: var(--teal-color);
+  border-color: var(--teal-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sponsors-section .partner-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-color);
+  border-radius: 25px;
+  border: 1px solid var(--accent-color);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sponsors-section .partner-link:hover {
+  background: var(--teal-color);
+  border-color: var(--teal-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.partnership-opportunities-section {
+  padding: 60px 0;
+  background: #fff;
+  margin: 0;
+  border: none;
+}
+
+.opportunities-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.opportunities-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #333 !important;
+  width: 100%;
+}
+
+.opportunities-text h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.opportunities-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.opportunities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 3rem;
+}
+
+.opportunity-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.opportunity-item:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+}
+
+.opportunity-item i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  min-width: 30px;
+}
+
+.opportunity-item span {
+  font-weight: 500;
+  color: #333;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--accent-color), var(--teal-color));
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(75, 34, 122, 0.3);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.cta-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partners-page .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .partners-page .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .partners-section h2,
+  .sponsors-section h2,
+  .opportunities-text h2 {
+    font-size: 2rem;
+  }
+  
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .partner-card {
+    padding: 1.5rem;
+  }
+  
+  .opportunities-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-page .hero-section {
+    padding: 100px 0 60px;
+  }
+  
+  .partners-section,
+  .sponsors-section,
+  .partnership-opportunities-section {
+    padding: 60px 0;
+  }
+  
+  .partner-card {
+    padding: 1rem;
+  }
+  
+  .partner-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .partner-logo img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}

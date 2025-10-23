@@ -12,6 +12,7 @@ const Footer = () => {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/partners">Partners</Link></li>
               <li><Link to="/events">Events</Link></li>
               <li><Link to="/resources">Resources</Link></li>
               <li><Link to="/get-involved">Get Involved</Link></li>
@@ -24,6 +25,7 @@ const Footer = () => {
             <ul>
               <li><Link to="/events">All Events</Link></li>
               <li><Link to="/events/upcoming">Upcoming Events</Link></li>
+              <li><Link to="/events/past">Past Events</Link></li>
               <li><Link to="/get-involved">Host an Event</Link></li>
             </ul>
           </div>
