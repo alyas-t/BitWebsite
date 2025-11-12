@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Resources.css';
-import { Link } from 'react-router-dom';
+import rss1 from '../images/rss1.jpg';
+import rss2 from '../images/rss2.jpg';
+import rss3 from '../images/rss3.jpg';
 
 const ResourcesPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -13,6 +15,11 @@ const ResourcesPage = () => {
     { id: 'networking', name: 'Networking' },
     { id: 'career', name: 'Career Development' }
   ];
+
+  const handleImageError = (event) => {
+    event.target.src = 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80';
+    event.target.onerror = null;
+  };
 
   // Sample resources data
   const resources = [
@@ -38,7 +45,7 @@ const ResourcesPage = () => {
       id: 3,
       title: 'Networking for Tech Professionals',
       description: 'Networking opportunities including our Google campus tour and tech industry mixers designed specifically for underrepresented professionals.',
-      image: 'src/components/images/rss1.jpg',
+      image: rss1,
       category: 'networking',
       tags: ['Google Tour', 'Industry Events', 'Professional'],
       link: 'https://www.linkedin.com/learning/networking-for-career-success'
@@ -56,7 +63,7 @@ const ResourcesPage = () => {
       id: 5,
       title: 'Black in Tech Resume Workshops',
       description: 'Attend our resume workshops featuring Microsoft recruiters who provide personalized advice to help you stand out in the tech industry.',
-      image: 'src/components/images/rss2.jpg',
+      image: rss2,
       category: 'career',
       tags: ['Microsoft', 'Resume', 'Job Search'],
       link: 'https://www.indeed.com/career-advice/resumes-cover-letters/how-to-make-a-resume-with-examples'
@@ -65,7 +72,7 @@ const ResourcesPage = () => {
       id: 6,
       title: 'Tech Industry Mentorship',
       description: 'Connect with experienced mentors in the tech industry who can provide guidance and support for your career journey.',
-      image: 'src/components/images/rss3.jpg',
+      image: rss3,
       category: 'career',
       tags: ['Mentorship', 'Career Growth', 'Development'],
       link: 'https://www.blacksintechnology.net/'
@@ -105,7 +112,7 @@ const ResourcesPage = () => {
           <div className="resources-grid">
             {filteredResources.map((resource, index) => (
               <div className="resource-card" key={resource.id}>
-                <img src={resource.image} alt={resource.title} />
+                <img src={resource.image} alt={resource.title} onError={handleImageError} />
                 <div className="card-content">
                   <h3>{resource.title}</h3>
                   <p>{resource.description}</p>

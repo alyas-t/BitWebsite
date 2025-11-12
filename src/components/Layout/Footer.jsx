@@ -34,7 +34,7 @@ const Footer = () => {
             <h4>Connect</h4>
             <ul className="social-links">
               <li><a href="https://www.instagram.com/bit.uci/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i> Instagram</a></li>
-              <li><a href="https://discord.gg/H7RdmRXh32" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> Discord</a></li>
+              <li><a href="https://discord.gg/NAUB2XXSb3" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i> Discord</a></li>
               <li><a href="mailto:blackintech@uci.edu"><i className="far fa-envelope"></i> Email Us</a></li>
             </ul>
           </div>

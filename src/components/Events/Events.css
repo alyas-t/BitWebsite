@@ -470,6 +470,28 @@ hr {
   line-height: 1.6;
 }
 
+.events-blog-cta {
+  background: linear-gradient(135deg, rgba(75, 34, 122, 0.05), rgba(1, 151, 175, 0.05));
+  padding: 80px 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.events-blog-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.events-blog-cta p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Events Footer */
 .events-footer {
   background-color: #081229;

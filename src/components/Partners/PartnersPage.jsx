@@ -3,177 +3,236 @@ import { Link } from 'react-router-dom';
 import './Partners.css';
 
 const PartnersPage = () => {
-  const partners = [
+  // Current sponsors/partners
+  const currentSponsors = [
+    {
+      name: "CoStar Group",
+      logo: "/images/partners/costar-logo.svg",
+      website: "https://www.costar.com"
+    },
     {
       name: "Google",
-      type: "Corporate Partner",
-      description: "Google has been a key supporter of our mission, providing mentorship opportunities, technical workshops, and career guidance for our members.",
-      logo: "/images/partners/google-logo.png",
+      logo: "/images/partners/google-logo.svg",
       website: "https://www.google.com"
     },
     {
       name: "Microsoft",
-      type: "Corporate Partner", 
-      description: "Microsoft Innovation Hub has hosted exclusive tours and workshops for our members, offering insights into cutting-edge technology and career opportunities.",
-      logo: "/images/partners/microsoft-logo.png",
+      logo: "/images/partners/microsoft-logo.svg",
       website: "https://www.microsoft.com"
     },
     {
+      name: "Northrop Grumman",
+      logo: "/images/partners/northrop-grumman-logo.svg",
+      website: "https://www.northropgrumman.com"
+    },
+    {
       name: "PwC",
-      type: "Corporate Partner",
-      description: "PwC has provided valuable industry insights and networking opportunities, helping our members understand the intersection of technology and business.",
-      logo: "/images/partners/pwc-logo.png",
+      logo: "/images/partners/pwc-logo.svg",
       website: "https://www.pwc.com"
     },
     {
-      name: "Northrop Grumman",
-      type: "Corporate Partner",
-      description: "Northrop Grumman has supported our mission through technical presentations and career development opportunities in aerospace and defense technology.",
-      logo: "/images/partners/northrop-grumman-logo.png",
-      website: "https://www.northropgrumman.com"
-    }
-  ];
-
-  const sponsors = [
-    {
-      name: "UCI Donald Bren School of Information and Computer Sciences",
-      type: "Academic Sponsor",
-      description: "Our home school provides essential support, resources, and facilities that enable our organization to thrive and serve the student community.",
-      logo: "/images/partners/uci-ics-logo.png",
-      website: "https://www.ics.uci.edu"
+      name: "SOAR office UCI",
+      logo: "/images/partners/soar-logo.svg",
+      website: "https://soar.uci.edu"
     },
     {
-      name: "UCI Student Organizations Leadership and Involvement (SOLI)",
-      type: "Campus Partner",
-      description: "SOLI provides guidance and support for student organizations, helping us maintain our status and access to campus resources.",
-      logo: "/images/partners/uci-soli-logo.png",
-      website: "https://involvement.uci.edu"
+      name: "UCI ICS",
+      logo: "/images/partners/uci-ics-logo.svg",
+      website: "https://www.ics.uci.edu"
     }
   ];
 
-  const PartnerCard = ({ partner }) => (
-    <div className="partner-card scale-in">
-      <div className="partner-logo">
+  // Sponsorship tiers
+  const sponsorshipTiers = [
+    {
+      name: "Bronze",
+      price: "$1,000",
+      benefits: [
+        "Bring swag",
+        "Name on t-shirt",
+        "Logo on website"
+      ]
+    },
+    {
+      name: "Silver",
+      price: "$2,000",
+      benefits: [
+        "2+ Events",
+        "Bring swag",
+        "Bring food",
+        "Name on t-shirt",
+        "Logo on website",
+        "Social media shoutout",
+        "Resume book",
+        "Access to GitHub",
+        "Access to LinkedIn"
+      ]
+    },
+    {
+      name: "Gold",
+      price: "$5,000",
+      benefits: [
+        "2+ Events",
+        "Bring swag",
+        "Bring food",
+        "Sponsored activity",
+        "Name on t-shirt",
+        "Logo on website",
+        "Social media shoutout",
+        "Sponsored prize",
+        "Resume book",
+        "Access to GitHub",
+        "Access to LinkedIn",
+        "Send recruiters",
+        "Mailing list"
+      ]
+    }
+  ];
+
+  const SponsorLogo = ({ sponsor }) => (
+    <div className="sponsor-logo-item">
+      <a 
+        href={sponsor.website} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="sponsor-logo-link"
+      >
         <img 
-          src={partner.logo} 
-          alt={`${partner.name} logo`}
+          src={sponsor.logo} 
+          alt={`${sponsor.name} logo`}
           onError={(e) => {
             e.target.style.display = 'none';
             e.target.nextSibling.style.display = 'block';
           }}
         />
         <div className="logo-placeholder" style={{display: 'none'}}>
-          {partner.name === 'Google' && <span style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#4285F4'}}>G</span>}
-          {partner.name === 'Microsoft' && <span style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#00BCF2'}}>M</span>}
-          {partner.name === 'PwC' && <span style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#BE1E2D'}}>PwC</span>}
-          {partner.name === 'Northrop Grumman' && <span style={{fontSize: '1.2rem', fontWeight: 'bold', color: '#1B365D'}}>NG</span>}
-          {partner.name === 'UCI Donald Bren School of Information and Computer Sciences' && <span style={{fontSize: '1.2rem', fontWeight: 'bold', color: '#0066CC'}}>UCI ICS</span>}
-          {partner.name === 'UCI Student Organizations Leadership and Involvement (SOLI)' && <span style={{fontSize: '1.2rem', fontWeight: 'bold', color: '#0066CC'}}>UCI SOLI</span>}
-          {!['Google', 'Microsoft', 'PwC', 'Northrop Grumman', 'UCI Donald Bren School of Information and Computer Sciences', 'UCI Student Organizations Leadership and Involvement (SOLI)'].includes(partner.name) && <i className="fas fa-building"></i>}
+          <i className="fas fa-building"></i>
         </div>
-      </div>
-      <div className="partner-content">
-        <h3>{partner.name}</h3>
-        <p className="partner-type">{partner.type}</p>
-        <p className="partner-description">{partner.description}</p>
-        <a 
-          href={partner.website} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="partner-link"
-        >
-          Visit Website <i className="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+      </a>
     </div>
   );
 
   return (
     <div className="partners-page page-transition">
-      {/* Hero Section */}
+      {/* Hero Section - BECOME A SPONSOR */}
       <section className="hero-section">
         <div className="container">
-          <h1 className="fade-in-up">Partners and Sponsors</h1>
-          <p className="fade-in-up">Meet the organizations that support our mission of fostering diversity and inclusion in technology</p>
-          <Link to="/about" className="cta-button fade-in-up">Back to About</Link>
-        </div>
-      </section>
-
-      {/* Corporate Partners Section */}
-      <section className="partners-section">
-        <div className="container">
-          <h2 className="fade-in-up">Corporate Partners</h2>
-          <p className="section-description fade-in-up">
-            These industry leaders provide mentorship, career opportunities, and technical resources to help our members succeed.
+          <h1 className="fade-in-up">BECOME A SPONSOR</h1>
+          <p className="fade-in-up">
+            Help our chapter continue to create more culturally responsible black tech professionals by becoming our sponsor.
           </p>
-          <div className="partners-grid">
-            {partners.map((partner, index) => (
-              <PartnerCard key={index} partner={partner} />
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Academic & Campus Partners Section */}
-      <section className="sponsors-section">
+      {/* HOW TO HELP Section */}
+      <section className="how-to-help-section">
         <div className="container">
-          <h2 className="fade-in-up">Academic & Campus Partners</h2>
-          <p className="section-description fade-in-up">
-            Our academic and campus partners provide the foundation and support that makes our organization possible.
+          <h2 className="fade-in-up">HOW TO HELP</h2>
+          <p className="fade-in-up">
+            Are you interested in sponsoring us? We invite you to explore our General Sponsorship Package for this year, 
+            available for viewing or downloading as a PDF.
           </p>
-          <div className="partners-grid">
-            {sponsors.map((sponsor, index) => (
-              <PartnerCard key={index} partner={sponsor} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partnership Opportunities Section */}
-      <section className="partnership-opportunities-section">
-        <div className="container">
-          <div className="opportunities-content">
-            <div className="opportunities-text fade-in-left">
-              <h2>Interested in Partnering with Us?</h2>
-              <p>
-                We're always looking for new partners who share our mission of promoting diversity and inclusion in technology. 
-                Whether you're a corporation, startup, or academic institution, there are many ways to get involved.
-              </p>
-              <div className="opportunities-list">
-                <div className="opportunity-item">
-                  <i className="fas fa-chalkboard-teacher"></i>
-                  <span>Host workshops and technical sessions</span>
-                </div>
-                <div className="opportunity-item">
-                  <i className="fas fa-handshake"></i>
-                  <span>Provide mentorship opportunities</span>
-                </div>
-                <div className="opportunity-item">
-                  <i className="fas fa-briefcase"></i>
-                  <span>Offer internships and career opportunities</span>
-                </div>
-                <div className="opportunity-item">
-                  <i className="fas fa-graduation-cap"></i>
-                  <span>Support educational initiatives</span>
-                </div>
-              </div>
-              <div className="cta-buttons">
-                <a 
-                  href="https://www.canva.com/design/DAGl29NyCvg/ZnVM_Ybdbt27NizKdSl1VQ/edit" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cta-button"
-                >
-                  View Sponsorship Packet
-                </a>
-                <a 
-                  href="mailto:blackintech@uci.edu" 
-                  className="cta-button secondary"
-                >
-                  Contact Us
-                </a>
-              </div>
+          <p className="fade-in-up">
+            If you decide to support us, please contact our executive board via email at{' '}
+            <a href="mailto:blackintech@uci.edu" className="email-link">blackintech@uci.edu</a>. 
+            Include "Sponsorship Request" in the subject line and describe in the body of the email how you would like to be involved.
+          </p>
+          <p className="fade-in-up">
+            To request a paper copy of our corporate solicitation packet, please email us with the subject line "Send Solicitation Packet."
+          </p>
+          
+          {/* Embedded Canva Sponsorship Packet */}
+          <div className="canva-embed-container">
+            <div 
+              style={{
+                position: 'relative',
+                width: '100%',
+                maxWidth: '800px',
+                margin: '0 auto',
+                height: 0,
+                paddingTop: '129.4118%',
+                paddingBottom: 0,
+                boxShadow: '0 2px 8px 0 rgba(63,69,81,0.16)',
+                marginTop: '1.6em',
+                marginBottom: '0.9em',
+                overflow: 'hidden',
+                borderRadius: '8px',
+                willChange: 'transform'
+              }}
+            >
+              <iframe
+                loading="lazy"
+                style={{
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  top: 0,
+                  left: 0,
+                  border: 'none',
+                  padding: 0,
+                  margin: 0
+                }}
+                src="https://www.canva.com/design/DAGl29NyCvg/slsMaSfGApWz1dyqqZAg5w/view?embed"
+                allowFullScreen
+                allow="fullscreen"
+                title="BiT Pitch Sponsorship Packet"
+              />
             </div>
+            <a 
+              href="https://www.canva.com/design/DAGl29NyCvg/slsMaSfGApWz1dyqqZAg5w/view?utm_content=DAGl29NyCvg&utm_campaign=designshare&utm_medium=embeds&utm_source=link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="canva-link"
+            >
+              BiT Pitch Sponsorship Packet
+            </a>
+            {' '}by Chidera Okoroama
+          </div>
+
+          <div className="sponsorship-packet-buttons">
+            <a 
+              href="mailto:blackintech@uci.edu?subject=Sponsorship Request" 
+              className="cta-button"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsorship Tiers Section */}
+      <section className="sponsorship-tiers-section">
+        <div className="container">
+          <div className="tiers-grid">
+            {sponsorshipTiers.map((tier, index) => (
+              <div key={index} className={`sponsorship-tier tier-${tier.name.toLowerCase()}`}>
+                <h3 className="tier-name">{tier.name}</h3>
+                <ul className="tier-benefits">
+                  {tier.benefits.map((benefit, benefitIndex) => (
+                    <li key={benefitIndex}>{benefit}</li>
+                  ))}
+                </ul>
+                <div className="tier-price">{tier.price}</div>
+                <a 
+                  href="mailto:blackintech@uci.edu?subject=Sponsorship Request" 
+                  className="tier-cta-button"
+                >
+                  Start Today
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Thank You to Our Sponsors Section */}
+      <section className="thank-you-sponsors-section">
+        <div className="container">
+          <h2 className="fade-in-up">Thank You to Our Sponsors!</h2>
+          <div className="sponsors-logos-grid">
+            {currentSponsors.map((sponsor, index) => (
+              <SponsorLogo key={index} sponsor={sponsor} />
+            ))}
           </div>
         </div>
       </section>

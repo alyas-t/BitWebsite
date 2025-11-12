@@ -32,7 +32,7 @@ function Layout() {
           <a href="https://www.instagram.com/bit.uci/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://discord.gg/H7RdmRXh32" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.gg/NAUB2XXSb3" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-discord"></i>
           </a>
         </div>
