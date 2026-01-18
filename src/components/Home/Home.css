@@ -341,10 +341,6 @@ html, body {
   box-shadow: 0 12px 25px rgba(75, 34, 122, 0.4);
 }
 
-.cta-button:hover::after {
-  left: 100%;
-}
-
 /* About Section */
 .about {
   padding: 100px 20px;
