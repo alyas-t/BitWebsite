@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import './Layout.css';
 import Footer from './Footer';
 
@@ -10,20 +10,15 @@ function Layout() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const location = useLocation();
+
   React.useEffect(() => {
-    // Check if Font Awesome is already loaded
-    const fontAwesomeLink = document.querySelector('link[href*="font-awesome"]');
-    
-    if (!fontAwesomeLink) {
-      // Add Font Awesome if it's not already loaded
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-      link.integrity = 'sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==';
-      link.crossOrigin = 'anonymous';
-      document.head.appendChild(link);
-    }
-  }, []);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, [location]);
 
   return (
     <div className="layout">
