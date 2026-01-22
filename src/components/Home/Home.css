@@ -65,7 +65,6 @@ html, body {
 }
 
 .hero-content .logo, .logo-placeholder {
-  max-width: 600px;
   margin-bottom: 30px;
   filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
   transition: transform 0.3s ease;
