@@ -53,11 +53,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* 
+Global layout container
+Used for page-level horizontal spacing
+Avoid redefining `.container` in page-specific styles.
+*/
 
 .container {
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1rem;
 }
 
 /* Updated Button Styles */
@@ -147,6 +153,10 @@ a.btn, button.btn {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+  
   .section {
     padding: 60px 0;
   }
