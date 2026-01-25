@@ -44,7 +44,9 @@ const PastBoardMembers = () => {
         <div className="container">
           <h1 className="fade-in-up">Past Board Members</h1>
           <p className="fade-in-up">Meet the dedicated individuals who helped build and shape Black in Tech at UCI</p>
-          <Link to="/about" className="cta-button fade-in-up">Back to About</Link>
+          <div className="back-button-wrapper fade-in-up">
+            <Link to="/about" className="cta-button">Back to About</Link>
+          </div>
         </div>
       </section>
 

@@ -176,3 +176,14 @@ a.btn, button.btn {
     font-size: 1.75rem;
   }
 } 
+
+/* Past Board – Back Button Spacing Fix */
+.back-button-wrapper {
+  margin-top: 1.25rem;   /* space between paragraph and button on mobile */
+}
+
+@media (min-width: 640px) {
+  .back-button-wrapper {
+    margin-top: 2rem;    /* a little more space on larger screens */
+  }
+}
