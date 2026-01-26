@@ -309,11 +309,22 @@
   
   .resources-hero {
     padding: 70px 20px 60px;
+    margin-bottom: 2rem;
   }
   
   .resources-container {
-    margin-top: -30px;
+    margin-top: 0;
   }
+  
+  .category-tab {
+    padding: 0.75rem 1.125rem;
+    font-size: 1rem;
+  }
+
+  .resource-categories {
+    gap: 0.75rem;
+  }
+  
 }
 
 /* Modern styling for resource cards if they exist */
