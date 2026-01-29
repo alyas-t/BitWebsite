@@ -40,7 +40,7 @@ const PastBoardMembers = () => {
   return (
     <div className="about-page page-transition">
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section past-board-hero">
         <div className="container">
           <h1 className="fade-in-up">Past Board Members</h1>
           <p className="fade-in-up">Meet the dedicated individuals who helped build and shape Black in Tech at UCI</p>

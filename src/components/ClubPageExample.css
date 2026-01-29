@@ -111,6 +111,10 @@
   letter-spacing: 0.3px;
 }
 
+.past-board-hero p {
+  margin-bottom: 28px;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
