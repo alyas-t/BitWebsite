@@ -1,6 +1,19 @@
-# bitwebsite
+# BitWebsite
+
+## Prerequisites
+```
+- Node.js (version compatible with React 19)
+- npm
+- Git
+```
 
 ## Project setup
+```
+git clone https://github.com/alyas-t/BitWebsite.git
+cd BitWebsite
+```
+
+## Install dependencies
 ```
 npm install
 ```
@@ -15,13 +28,10 @@ npm run dev
 npm run build
 ```
 
-### Lints and fixes files
+### Compiles and previews production build locally
 ```
-npm run lint
+npm run preview
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Contributors
 - Alyas Thomas
