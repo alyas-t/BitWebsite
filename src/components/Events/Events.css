@@ -22,13 +22,6 @@ html, body {
   border: none;
 }
 
-.container {
-  width: 90%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .section {
   margin: 0;
 }
