@@ -70,6 +70,11 @@ html, body {
   transition: transform 0.3s ease;
 }
 
+.logo {
+  width: 100%;
+  max-width: 100px;
+}
+
 .hero-content .logo:hover {
   transform: scale(1.05);
 }
@@ -571,6 +576,24 @@ html, body {
   
   .cta h1 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero {
+    padding: 30px 20px 70px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  
+  .cta h1 {
+    font-size: 1.2rem;
   }
 }
 
